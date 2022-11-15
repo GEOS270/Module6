@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Resolution and Error
-parent: Lecture Content
-has_children: True
+parent: Uncertainty and Ethics
+# has_children: True
 nav_order: 4
 ---
 

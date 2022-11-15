@@ -1,0 +1,91 @@
+I"œ<h1 class="no_toc" id="helpful-videos-videos">Helpful Videos Videos</h1>
+
+<p>Based on the survey, it looks like folks are feeling a bit unsure about projections and spatial overlay tools.</p>
+
+<details open="">
+  <summary class="text-delta">
+    Table of contents
+  </summary>
+<ol id="markdown-toc">
+  <li><a href="#spatial-coordinate-systems" id="markdown-toc-spatial-coordinate-systems">Spatial Coordinate Systems</a>    <ol>
+      <li><a href="#where-are-you" id="markdown-toc-where-are-you">Where are you?</a></li>
+      <li><a href="#what-does-the-earth-look-like" id="markdown-toc-what-does-the-earth-look-like">What does the earth look like?</a></li>
+      <li><a href="#steps-of-abstraction" id="markdown-toc-steps-of-abstraction">Steps of Abstraction</a></li>
+      <li><a href="#map-projections" id="markdown-toc-map-projections">Map Projections</a></li>
+    </ol>
+  </li>
+  <li><a href="#analysis-methods" id="markdown-toc-analysis-methods">Analysis Methods</a>    <ol>
+      <li><a href="#queries" id="markdown-toc-queries">Queries</a>        <ol>
+          <li><a href="#select-by-attributes" id="markdown-toc-select-by-attributes">Select by Attributes</a></li>
+          <li><a href="#select-by-location" id="markdown-toc-select-by-location">Select by Location</a></li>
+        </ol>
+      </li>
+      <li><a href="#buffering" id="markdown-toc-buffering">Buffering</a></li>
+      <li><a href="#vector-overlay-methods" id="markdown-toc-vector-overlay-methods">Vector Overlay Methods</a></li>
+      <li><a href="#raster-analysis" id="markdown-toc-raster-analysis">Raster Analysis</a></li>
+    </ol>
+  </li>
+</ol>
+
+</details>
+
+<h1 id="spatial-coordinate-systems">Spatial Coordinate Systems</h1>
+
+<h2 id="where-are-you">Where are you?</h2>
+
+<p>This Kurzgesagt video discusses scales and reference frames.  It can help give some context to why we need map projections.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Pj-h6MEgE7I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<h2 id="what-does-the-earth-look-like">What does the earth look like?</h2>
+
+<p>This Vsauce video discusses map projections.  The whole video is interesting, but the <strong>content on projections</strong> starts around 3:30.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2lR7s1Y6Zig" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<h2 id="steps-of-abstraction">Steps of Abstraction</h2>
+
+<p>This video covers the steps of Abstraction - How we go from the 3d Earth to a 2d map.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vlqhigV6u0o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<h2 id="map-projections">Map Projections</h2>
+
+<p>This video discusses some of the key aspects of map projections.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UXcuh1xyTzU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<h1 id="analysis-methods">Analysis Methods</h1>
+
+<h2 id="queries">Queries</h2>
+
+<h3 id="select-by-attributes">Select by Attributes</h3>
+
+<p>Selecting by attribute is something weâ€™ve done a number of times in class so far.  This video gives a more well rounded overview how how to conduct and structure queries.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PxyxccEz6Lk?start=48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<h3 id="select-by-location">Select by Location</h3>
+
+<p>This video covers select by location.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NVqH_ho8eDw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<h2 id="buffering">Buffering</h2>
+
+<p>This video gives an overview of buffering.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uvMlMvCk0g0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<h2 id="vector-overlay-methods">Vector Overlay Methods</h2>
+
+<p>This video covers a few of the vector overlay methods I introduced in Module 5.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jkjVX97Xtcc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<h2 id="raster-analysis">Raster Analysis</h2>
+
+<p>This video covers some raster overlay methods and gives a very simple overview of how you can use the raster calculator for suitability analysis.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7pZoG8FKIuE?start=135" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+:ET

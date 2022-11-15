@@ -1,0 +1,32 @@
+I"´<h1 id="weighted-overlay">Weighted Overlay</h1>
+
+<p>Use the weighted overlay tool to create an Inundation Risk layer.  You should complete these general steps.  Refer to the short video at the bottom of the page for reference.</p>
+
+<p><strong class="label label-red">1</strong> Add the weighted overlay tool to the model and set the reclassified layers as the inputs.</p>
+
+<p><strong class="label label-red">2</strong> Set the weights for the <strong>Elevation Layer</strong> layer following the image below.  Elevation should have a weight of 75%.</p>
+<ul>
+  <li>The scale should increase sequentially (i.e., 1, 2, 3 â€¦ 10) for the field values.
+    <ul>
+      <li>We are doing this because the spacing used in the reclassify step was 2m for each class.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="content/images/WL1.png" alt="missing" class="inline" width="500" /></p>
+
+<p><strong class="label label-red">3</strong> Set the weights for the <strong>Distance</strong> following the image below.  Distance should have a weight of 25%.</p>
+<ul>
+  <li>The scale <strong>is not</strong> increasing sequentially for the field values.
+    <ul>
+      <li>We are doing this because the spacing used in the reclassify step was not consistent for each class.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="content/images/WL2.png" alt="missing" class="inline" width="500" /></p>
+
+<p><strong class="label label-red">4</strong> Inspect the output to make sure it makes sense.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4DbRt0I3Qjw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+:ET

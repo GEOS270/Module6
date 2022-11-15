@@ -1,0 +1,22 @@
+I"Y<h1 id="redoing-the-risk-assessment">Redoing the Risk Assessment</h1>
+
+<p>Your task for this module is to re-do some aspects of the Port Alberni Tsunami Risk Assessment using the weighted overlay tool.  Specifically, we want to create a more accurate inundation zone that will allow for a more nuanced look at which areas might flood in the event of a Tsunami.</p>
+
+<h1 id="learning-outcomes">Learning Outcomes</h1>
+
+<ul>
+  <li>Gain Experience with Raster Overlay Methods</li>
+  <li>Apply a Multi-Ring Buffers</li>
+  <li>More Practice with Model Builder</li>
+</ul>
+
+<h1 id="workflow">Workflow</h1>
+
+<p><strong class="label label-red">1</strong> Use the Euclidean Distance tool to approximate distance from the waterbodies layer</p>
+
+<p><strong class="label label-red">2</strong> Reclassify the distance and elevation rasters so they are binned in discrete intervals</p>
+
+<p><strong class="label label-red">3</strong> Use the Weighted Overlay tool to create a more accurate Inundation Zone</p>
+
+<p><strong class="label label-red">4</strong> Map areas in Port Alberni that could flood in the event of a Tsunami</p>
+:ET

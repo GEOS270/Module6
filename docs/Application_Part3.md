@@ -8,7 +8,7 @@ nav_order: 3
 
 # Reclassify
 
-Reclassify distance and elevation.  You should complete these general steps.  Refer to the short video at the bottom of the page for reference.
+Reclassify distance and elevation.  You should complete these general steps.  **Make sure** the "Scales" dropdown is set to 1-10.  Refer to the short video at the bottom of the page for reference.
 
 **1**{: .label .label-red } Reclassify the **Euclidean Distance** layer following the table below.
 
@@ -38,5 +38,7 @@ Reclassify distance and elevation.  You should complete these general steps.  Re
 | 20    | 10000| NODATA	| 
 
 **3**{: .label .label-red } Inspect the outputs to make sure they are correct.
+
+---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rGfeEaTi7Ig" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

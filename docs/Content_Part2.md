@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Sampling and Interpolation
-parent: Lecture Content
-has_children: True
-nav_order: 2
+parent: Uncertainty and Ethics
+# has_children: True
+nav_order: 1
 ---
 
 <script type="text/javascript" async

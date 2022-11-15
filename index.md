@@ -1,10 +1,11 @@
 ---
 layout: default
-title: Module 5
+title: Uncertainty and Ethics
+has_children: True
 nav_order: 1
 ---
 
-# Spatial Sampling & Interpolation; Uncertainty in GIS;    
+# Uncertainty and Ethics: Spatial Sampling & Interpolation; Uncertainty in GIS;    
 
 This module will discuss techniques for spatial sampling and interpolation, followed by a broad discussion on types of uncertainty in GIS, both quantifiable errors and other issues that can be harder to explicitly define.
 

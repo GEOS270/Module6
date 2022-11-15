@@ -13,10 +13,14 @@ Use the weighted overlay tool to create an Inundation Risk layer.  You should co
 **1**{: .label .label-red } Add the weighted overlay tool to the model and set the reclassified layers as the inputs.
 
 **2**{: .label .label-red } Set the weights for the **Elevation Layer** layer following the image below.  Elevation should have a weight of 75%.
+* The scale should increase sequentially (i.e., 1, 2, 3 ... 10) for the field values.
+    * We are doing this because the spacing used in the reclassify step was 2m for each class.
 
 <img src="content/images/WL1.png" alt="missing" class="inline" width="500">
 
 **3**{: .label .label-red } Set the weights for the **Distance** following the image below.  Distance should have a weight of 25%.
+* The scale **is not** increasing sequentially for the field values.
+    * We are doing this because the spacing used in the reclassify step was not consistent for each class.
 
 <img src="content/images/WL2.png" alt="missing" class="inline" width="500">
 

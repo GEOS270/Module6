@@ -1,0 +1,15 @@
+I"P<h1 id="final-map--model">Final Map &amp; Model</h1>
+
+<p><strong class="label label-red">1</strong> Submit a final map showing the Tsunami Inundation risk classification for Port Alberni</p>
+
+<ul>
+  <li>The map should include the inundation zone, a satellite base map of port Alberni, and all relevant map elements.
+    <ul>
+      <li>You can list google earth engine as the DEM data source and the City of Port Alberni as the “Waterbodies” data source.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong class="label label-red">2</strong> Export your model as a .pdf and submit that as well.</p>
+
+:ET

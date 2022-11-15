@@ -1,0 +1,12 @@
+I")<h1 id="euclidean-distance">Euclidean Distance</h1>
+
+<p>Create a model and calculate distance from the water.  You should complete these general steps.  Refer to the short video at the bottom of the page for reference.</p>
+
+<p><strong class="label label-red">1</strong> Create a new model.</p>
+
+<p><strong class="label label-red">2</strong> Use the Euclidean Distance tool to create a raster layer of distance from the waterbodies layer.</p>
+
+<p><strong class="label label-red">3</strong> Make sure to set the extent equal to the PA_DEM_ProjectRaster.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KLlTEq_UezY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+:ET

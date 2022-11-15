@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Unertainty in GIS
-parent: Lecture Content
-has_children: True
+title: Uncertainty in GIS
+parent: Uncertainty and Ethics
+# has_children: True
 nav_order: 3
 ---
 
