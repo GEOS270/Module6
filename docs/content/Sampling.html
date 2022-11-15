@@ -1,0 +1,718 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <!-- <meta charset="utf-8"> -->
+
+  <title>Reveal.js template</title>
+  <!-- credit https://bl.ocks.org/elipousson/f64814b1ee4aab5d83775bfbf556d35a -->
+
+  <meta name="description" content="Simple Reveal.js slidedeck template. Source files loaded from jsDelivr.">
+  <meta name="author" content="jitesh@spinspire.com">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/reveal.min.css">
+  <link id="theme" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/theme/serif.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    // Load print, pdf stylesheets from jsDelivr
+    var srcUrlPrefix = 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/';
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = srcUrlPrefix + (window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css');
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/lib/js/html5shiv.js"></script>
+    <![endif]-->
+  <style>
+    
+.container {
+  position: fixed;
+    height: 700px;
+    width: 100%;
+}
+
+.title{
+  position: relative;
+  top: 5%;
+}
+
+.subtitle{
+  position: relative;
+  top: 10%;
+}
+
+.question{
+  position: relative;
+  text-align: left;
+  top: 10%;
+}
+
+
+.header {
+  top: 1%;
+  height: 10%;
+  width: 100%;
+  position: absolute;
+  text-align: left;
+}
+
+.full {
+  width: 95%;
+  top:  12%;
+  left: 0%;
+  text-align: left;
+  position: absolute; 
+}
+
+.left {
+  width: 49%;
+  height: 80%;
+  top: 12%;
+  left: 0%;
+  position: absolute;
+  text-align: left;
+}
+
+.right {
+  width: 49%;
+  top: 12%;
+  height: 80%;
+  left: 51%;
+  position: absolute;
+  text-align: left;
+}
+
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.figure {
+  width: 50%;
+  height: 100%;
+  left: 50%;
+  display: flex;
+  margin: auto;
+  position: absolute;
+  text-align: center;
+  display: block;
+  vertical-align: middle;
+}
+
+
+.subfigure {
+  width: 100%;
+  /* height: 100%; */
+  left: 0%;
+  display: flex;
+  margin: auto;
+  position: absolute;
+  text-align: center;
+  display: block;
+  vertical-align: middle;
+}
+
+h1 {
+  display: block;
+  font-size: 3em !important; 
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+  
+h2 {
+  display: block;
+  font-size: 1.5em !important;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+.reveal a {
+  color: blue;
+}
+
+.reveal {
+  background-color: #e6f9fc;
+}
+
+ul {
+    padding-left: 0;
+    font-size: 90%;
+
+} 
+
+ol {
+  counter-reset: item;
+  font-size: 90%;
+  padding-left: 0;
+}
+
+li.nl {
+  display: block;
+}
+
+li.nl:before {
+  content: counters(item, ".") ". ";
+  counter-increment: item;
+}
+
+ol ol li.nl::before {
+    content: counters(item, ".") " ";
+}
+
+#main img {
+    float: left;
+}
+
+.col {
+    flex: 1
+}
+
+
+  </style>
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+        <section>
+            <div class="title">
+                <h1>Spatial Sampling</h1>
+            </div>
+            <div class="subtitle">
+                How do we collect geospatial information?
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+            <h1 class="title">TopHat Question 1</h1>
+                <div class="question">
+                    <p>"Everything is related to everything else, but near things are more related than distant things."  This statement is known as:</p>
+                    <ul>
+                        <li>Tobler's First Law of Geography</li>
+                        <li>Tobler's Last Law of Geography</li>
+                        <li>Geography's First Principal</li>
+                        <li>The Only Rule of GIS</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2 class="header">The First Law of Geography</h2>
+                <div class="left">
+                    <p>Everything is related to everything else, but near things are more related than distant things.</p>
+                    <ul>
+                      <li>Objects (or regions) near each other are more likely to be similar to one another</li>
+                      <ul>Objects (or regions) that are distant from each other are more likely to be different from each other</ul>
+                      <li><b>This aspect of nature keeps coming up again and again in GIS!</b></li>
+                    </ul>
+                </div>
+                <div class="right" style="text-align: center">
+                    <img src="images/03-spatial-is-special.jpg" height="100%" style="border: solid 2px black">
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="container">
+                <h2 class="header">Sampling</h2>
+                <div class="full">
+                    <p>You can think of sampling as the process of selecting points from within an area or population, called a <b>sample frame</b>.</p>
+                    <ul>
+                      <li>We collect information about some  within the sample frame</li>
+                      <ul>
+                        <li>But we ignore <b>most</b> objects/locations</li>
+                        <li>Think back to Bonini's Paradox</li>
+                      </ul>
+                      <li>How we define our sample frame and choose our sample can determine the quality of our data</li>
+                      <ul>
+                        <li>We want to maximize representativeness of the sample</li>
+                        <li>But also minimize effort and expense associated with sampling</li>
+                      </ul>
+                    </ul>
+                </div>
+            </div>
+        </section>
+              
+        <section>
+            <div class="container">
+                <h2 class="header">Sampling</h2>
+                <div class="full">
+                    <p>Scientific sampling requires that each element in the sample frame have a known and pre-specified chance of selection.</p>
+                    <ul>
+                      <li>If some elements have a greater or lower chance of being selected our sample is said to be <b>biased</b></li>
+                      <li>If every element of interest has an equal chance of being selected our sample is said to be <b>unbiased</b></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2 class="header">Random Sampling</h2>
+                <div class="left">
+                    <p>In theory, a random sample is best.  Its the "gold standard".</p>
+                    <ul>
+                      <li>Each location has equal chance of being selected (<i>Unbiased</i>)</li>
+                      <ul>Easy to do, randomly select 𝑥,𝑦 coordinates</ul>
+                      <li>A foundational assumption of many statistical tests</li>
+                    </ul>
+                </div>
+                <div class="right" style="text-align: center">
+                    <img src="images/Random1.png" height="100%" style="border: solid 2px black; background-color: white;">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2 class="header">Random Sampling</h2>
+                <div class="left">
+                    <p>Can be difficult to implement in practice.</p>
+                    <ul>
+                      <li>There is a chance, that all samples will miss important features</li>
+                      <li>May be barriers to accessing some features</li>
+                      <ul>
+                        <li>Remote or rugged terrain</li>
+                        <li>Private or restricted property</li>
+                        <li>Systematic under-responses</li>
+                      </ul>
+                    </ul>
+                </div>
+                <div class="right" style="text-align: center">
+                    <img src="images/Random1.png" height="100%" style="border: solid 2px black; background-color: white;">
+                </div>
+            </div>
+        </section>
+        
+
+        <section>
+            <div class="container">
+                <h2 class="header">Random Sampling</h2>
+                <div class="full">
+                    <p>We have some options to account for the drawbacks</p>
+                    <ul>
+                        <li><b>The "law of large numbers"</b>: as we collect more information, our sample will become increasingly representative of actual population values</li>
+                        <ul>
+                            <li>Larger sample sizes</li>
+                            <li>Repeated samples (aka "Bootstrapping")</li>
+                            <ul>
+                                <li>e.g., Take 30 random samples of 100 individuals, calculate an average for each sample, then average across samples</li>
+                            </ul>
+                        </ul>
+                        <li>Not always practical</li>
+                        <ul>
+                            <li>Requires more time and resources</li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+            <h1 class="title">TopHat Question 2</h1>
+                <div class="question">
+                    <p>To collect a random sample, every object or location must:</p>
+                    <ul>
+                        <li>Have an equal chance of selection</li>
+                        <li>Be approximately the same size</li>
+                        <li>Not be close to other samples (i.e., equally dispersed)</li>
+                        <li>Not have a predefined chance of selection</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2 class="header">Alternate Approaches to Sampling</h2>
+                <div class="full">
+                    <p><b>Biased sampling</b></p>
+                    <ul>
+                        <li>Create a sample design that trades a sampling scheme for randomness</li>
+                        <li>Induce bias to the sample to:</li>
+                        <ul>
+                            <li>Save time or resources</li>
+                            <li>Account for relevant information about the sample frame</li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </section>
+      
+        <section>
+            <div class="container">
+                <h2 class="header">Systematic Sampling</h2>
+                <div class="left">
+                    <p>A random starting point is chosen and a fixed sampling interval is used.</p>
+                    <ul>
+                        <li>Randomly select first of 3 students</li>
+                        <ul>
+                            <li>Then select every 3rd after that</li>
+                        </ul>
+                        <li>Choose a random starting point</li>
+                        <ul>
+                            <li>Then draw equally spaced grid</li>
+                        </ul>
+                    </ul>
+                    
+                    <img src="images/systematic1.png" width="75%" style="border: solid 2px black; background-color: white;">
+                </div>
+                <div class="right" style="text-align: center">
+                    <img src="images/systematic2.png" height="100%" style="border: solid 2px black; background-color: white;">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2 class="header">Systematic Sampling</h2>
+                <div class="left">
+                    <p>A random starting point is chosen and a fixed sampling interval is used.</p>
+                    <ul>
+                        <li>General premise behind remote sensing (satellite data collection)</li>
+                        <li>Can be a good for areas that contain few features and abrupt boundaries</li>
+                        <ul>
+                            <li>e.g., Agricultural fields</li>
+                        </ul>
+                        <li>Not ideal for attributes that exhibit periodicity</li>
+                        <ul>
+                            <li>e.g., Roads</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="right" style="text-align: center">
+                    <img src="images/Satelite.jpg" width="100%" style="border: solid 2px black; background-color: white;">
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="container">
+                <h2 class="header">Systematic Sampling</h2>
+                <div class="left">
+                    <p>A random starting point is chosen and a fixed sampling interval is used.</p>
+                    <ul>
+                        <li>General premise behind remote sensing (satellite data collection)</li>
+                        <li>Can be a good for areas that contain few features and abrupt boundaries</li>
+                        <ul>
+                            <li>e.g., Agricultural fields</li>
+                        </ul>
+                        <li>Not ideal for attributes that exhibit periodicity</li>
+                        <ul>
+                            <li>e.g., Roads</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="right" style="text-align: center">
+                    <img src="images/systematic3.png" width="100%" style="border: solid 2px black; background-color: white;">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2 class="header">Stratified Sampling</h2>
+                <div class="left">
+                    <p>Helps to address the issues with systematic sampling by sampling at random locations, but still applying some "systematic bias"</p>
+                    <ul>
+                        <li>Create a systematic sampling grid, then take random samples within cells</li>
+                        <li>Divide a population by certain attributes, then take random samples from sub-populations</li>
+                        <ul>
+                            <li>Gender, race, age, political party, etc.</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="right" style="text-align: center">
+                    <img src="images/stratified1.png" height="100%" style="border: solid 2px black; background-color: white;">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2 class="header">Stratified Sampling</h2>
+                <div class="left">
+                    <p>Helps to address the issues with systematic sampling by sampling at random locations, but still applying some "systematic bias"</p>
+                    <ul>
+                        <li>Can avoid over/under sampling regularly repeating features</li>
+                        <li>Account for important factors</li>
+                    </ul>
+                    <img src="images/stratified3.png" width="100%" style="border: solid 2px black; background-color: white;">
+                </div>
+                <div class="right" style="text-align: center">
+                    <img src="images/stratified1.png" height="100%" style="border: solid 2px black; background-color: white;">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2 class="header">Cluster Sampling</h2>
+                <div class="left">
+                    <p>Intense sampling of features in clusters around a number of selected locations</p>
+                    <ul>
+                        <li>Locations can be selected for specific features:</li>
+                        <ul>
+                            <li>e.g., Shopping centers, known history of invasive species</li>
+                        </ul>
+                        <li>Or, locations can be selected at random across the grid</li>
+                        <li>More efficient use of time and resources</li>
+                        <ul>
+                            <li>May not be representative</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="right" style="text-align: center">
+                    <img src="images/cluster1.png" height="100%" style="border: solid 2px black; background-color: white;">
+                </div>
+            </div>
+        </section>
+        
+
+        <section>
+            <div class="container">
+                <h2 class="header">Transect Sampling</h2>
+                <div class="left">
+                    <p>Most commonly used along line features like roads, rivers</p>
+                    <ul>
+                        <li>Allows you to focus your efforts on features of interest</li>
+                        <li>Requires understanding of spatial structure for maximum effectiveness</li>
+                        <ul>
+                            <img src="images/transect.png" width="45%" style="border: solid 2px black; background-color: white;">
+                        </ul>
+                    </ul>
+                </div>
+                <div class="right" style="text-align: center">
+                    <img src="images/transect2.jpg" width="100%" style="border: solid 2px black; background-color: white;">
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="container">
+            <h1 class="title">TopHat Question 3</h1>
+                <div class="question">
+                    <p>Which of these sampling methods are unbiased?</p>
+                    <ul>
+                        <li>Cluster</li>
+                        <li>Stratified</li>
+                        <li>Transect</li>
+                        <li>Random</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2 class="header">How Many Samples?</h2>
+                <div class="left">
+                    <p>The number of samples required is a function of how similar units of that population are.</p>
+                    <ul>
+                        <li>Spatial structure can vary wildly across a landscape</li>
+                        <ul>
+                            <li>A little knowledge of your study area will help you to establish ways to best stratify to maximize returns with minimal effort</li>
+                        </ul>
+                        <li>Need to balance effective coverage with the cost (in $ or time)</li>
+                        <ul>
+                            <li>Eg. short vs. long census form</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="right" style="text-align: center">
+                    <img src="images/samp_size.png" width="100%" style="border: solid 2px black; background-color: white;">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2 class="header">Spatial Autocorrelation</h2>
+                <div class="full">
+                    <p>When the values of objects are related to the values of nearby objects.</p>
+                    <ul>
+                        <li>If you know the value of one object, you can make a reasonable guess at the value of nearby objects</li>
+                        <ul>
+                            <li>That doesn’t mean they are the same; <b>Correlation does not imply causation!</b></li>
+                            <li>There could be relationship between them, a relationship to a third object that determines the values of both, or a completely random coincidence</li>
+                            <img src="images/autocorrelation1.png" width="70%" style="border: solid 2px black; background-color: white;">
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2 class="header">Spatial Autocorrelation</h2>
+                <div class="full" style="text-align: center">
+                    <img src="images/autocorrelation.png" width="80%" style="border: solid 2px black; background-color: white;">
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="container">
+                <h2 class="header">Statistical Assumptions</h2>
+                <div class = "full">
+                    <p>Spatial autocorrelation is a problem when it comes to spatial statistics.  Most statistics assume that there is no relationship between objects!</p>
+                    <ul>
+                        <li>If you know the value of one object, you can make a reasonable guess at the value of nearby objects</li>
+                        <ul>
+                            <li>By violating this assumption, we “break” many common statistics!</li>
+                            <li>For this reason, a separate field of spatial statistics explores different ways of accessing similar information, or we acknowledge this as a flaw in our assumptions</li>
+                            <li><b>It is also a benefit!</b>:  We can exploit spatial autocorrelation to our advantage</li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+            <h1 class="title">TopHat Question 4</h1>
+                <div class="question">
+                    <p>Which number completes the sequence: 2, 4, 6, __, 10?</p>
+                    <ul>
+                        <li>3</li>
+                        <li>8</li>
+                        <li>11</li>
+                        <li>100</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2 class="header">Statistical Interpolation</h2>
+                <div class = "full">
+                    <p>The process of “filling in the blanks” that you just performed is called interpolation</p>
+                    <ul>
+                        <li>If you know the value of one object, you can make a reasonable guess at the value of nearby objects</li>
+                        <ul>
+                            <li>Over a 2D or 3D surface we call this spatial interpolation</li>
+                        </ul>
+                        <li>Intelligent guesswork in which we attempt to make reasonable estimates of the values of a continuous field at places where we do not have measurements</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2 class="header">Spatial Interpolation</h2>
+                <div class = "left">
+                    <p>Spatial interpolation only makes sense for a continuous field with numeric values.</p>
+                    <ul>
+                        <li>Rainfall, temperature, pressure</li>
+                        <ul>
+                            <li>Estimate between weather stations</li>
+                        </ul>
+                        <li>Elevation between measured locations</li>
+                        <li>With qualitative data, this can be problematic</li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <img src="images/wx_interp.gif" width="100%" style="border: solid 2px black; background-color: white;">
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <div class="container">
+                <h2 class="header">Spatial Interpolation</h2>
+                <div class = "full">
+                    <p>All spatial interpolation methods incorporate distance to known samples.</p>
+                    <ul>
+                        <li>Continuous fields tend to exhibit strong positive spatial autocorrelation, it is reasonable to assume that missing values are likely to be similar to those around them in the field</li>
+                        <ul>
+                            <li>Sound familiar? This is Tobler’s First Law!</li>
+                            <li>Closer samples may be given more weight than distant ones</li>
+                            <li>A threshold is usually set, to determine the maximum distance to take samples from</li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="container">
+                <h2 class="header">Inverse Distance Weighting</h2>
+                <div class = "full">
+                    <p>One of the most common methods.</p>
+                    <ul>
+                        <li>Calculates cell values based on nearby observations</li>
+                        <ul>
+                            <li>Weight cells by distance from observation points</li>
+                        </ul>
+                    </ul>
+                    <img src="images/IDW.png" width="100%" style="border: solid 2px black; background-color: white;">
+                </div>
+            </div>
+        </section>
+
+    </div><!-- .slides -->
+
+    
+  </div><!-- .reveal -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/reveal.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/plugin/math/math.min.js"></script>
+
+  <script>
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
+      overview: false,
+      loop: false,
+      margin: 0.03,
+      width: 1350,
+      height: 700,
+      transition: 'none',
+      plugins: [ RevealMath.MathJax2,
+    // RevealMarkdown
+         ]
+    },
+
+
+    );
+  </script>
+</body>
+
+</html>
