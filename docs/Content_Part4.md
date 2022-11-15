@@ -3,7 +3,7 @@ layout: default
 title: Resolution and Error
 parent: Sampling, Uncertainty, and Ethics
 # has_children: True
-nav_order: 3
+nav_order: 2
 ---
 
 
@@ -13,8 +13,8 @@ This videos give some visual examples of raster vs vector resolution
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/bG5E8YzqI0A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-# Modifiable Aereal Unit Problem (MAUP) 
+<!-- # Modifiable Aereal Unit Problem (MAUP) 
 
-This video covers the Modifiable Aereal Unit Problem (MAUP) and other exaples of error.
+This video covers the Modifiable Aereal Unit Problem (MAUP) and other examples of error.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/w-DMtRJrtWA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/w-DMtRJrtWA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
