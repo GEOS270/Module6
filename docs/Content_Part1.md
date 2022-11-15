@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Ethics in GIS
-parent: Uncertainty and Ethics
-has_children: True
-nav_order: 3
+parent: Sampling, Uncertainty, and Ethics
+# has_children: True
+nav_order: 4
 ---
 
 # Ethics in GIS

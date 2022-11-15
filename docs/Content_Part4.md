@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Resolution and Error
-parent: Uncertainty and Ethics
+parent: Sampling, Uncertainty, and Ethics
 # has_children: True
-nav_order: 4
+nav_order: 3
 ---
 
 

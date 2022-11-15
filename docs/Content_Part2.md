@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Sampling and Interpolation
-parent: Uncertainty and Ethics
+parent: Sampling, Uncertainty, and Ethics
 # has_children: True
 nav_order: 1
 ---
@@ -20,7 +20,7 @@ nav_order: 1
 <div style="overflow: hidden;
   padding-top: 56.25%;
   position: relative">
-  <iframe src="content/Sampling.pdf" title="Processes" scrolling="no" frameborder="0"
+  <iframe src="content/Sampling.html" title="Processes" scrolling="no" frameborder="0"
     style="border: 0;
    height: 100%;
    left: 0;
@@ -30,7 +30,7 @@ nav_order: 1
    <p>Your browser does not support iframes.</p>
  </iframe>
 </div>
-<a href="content/Sampling.pdf" target="_blank">View Slides in New Tab</a>
+<a href="content/Sampling.html" target="_blank">View Slides in New Tab</a>
 
 
 

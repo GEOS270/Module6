@@ -67,7 +67,7 @@
   },"11": {
     "doc": "Uncertainty in GIS",
     "title": "Uncertainty in GIS",
-    "content": "# Unertainty in GIS Your browser does not support iframes. View Slides in New Tab ",
+    "content": "# Uncertainty in GIS Your browser does not support iframes. View Slides in New Tab ",
     "url": "/docs/Content_Part3.html",
     "relUrl": "/docs/Content_Part3.html"
   },"12": {
@@ -77,9 +77,9 @@
     "url": "/docs/Content_Part4.html",
     "relUrl": "/docs/Content_Part4.html"
   },"13": {
-    "doc": "Uncertainty and Ethics",
-    "title": "Uncertainty and Ethics",
-    "content": "# Uncertainty and Ethics: Spatial Sampling & Interpolation; Uncertainty in GIS; This module will discuss techniques for spatial sampling and interpolation, followed by a broad discussion on types of uncertainty in GIS, both quantifiable errors and other issues that can be harder to explicitly define. # Deliverables Every module will be scored out of 100 pts. For this module will be be submitting one map and a some written responses. You will also be taking a quiz consisting of multiple choice, numeric input, fill in the blank, etc. type questions. See the [assessment page](docs/Assessment.md). ",
+    "doc": "Sampling, Uncertainty, and Ethics",
+    "title": "Sampling, Uncertainty, and Ethics",
+    "content": "# Sampling, Uncertainty, and Ethics This module will discuss techniques for spatial sampling and interpolation, followed by a broad discussion on types of uncertainty in GIS, both quantifiable errors and other issues that can be harder to explicitly define. Then we will close out the term with a discussion of ethical practices in GIS. ## Getting close to the end! This module contains the last lab assignment of the term and the last of the remaining lecture content. * ",
     "url": "/",
     "relUrl": "/"
   }
