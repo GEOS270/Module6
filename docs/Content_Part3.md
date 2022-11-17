@@ -3,7 +3,7 @@ layout: default
 title: Uncertainty in GIS
 parent: Sampling, Uncertainty, and Ethics
 # has_children: True
-nav_order: 2
+nav_order: 3
 ---
 
 <!-- 
