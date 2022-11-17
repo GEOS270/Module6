@@ -1,10 +1,22 @@
 ---
 layout: default
-title: Resolution and Error
+title: Applied Examples
 parent: Sampling, Uncertainty, and Ethics
 # has_children: True
 nav_order: 2
 ---
+
+
+# Sampling and Inverse Distance Weighting
+
+This [Arc Project](https://github.com/GEOS270/Module6/blob/main/data/Sampling_Interpolation.zip)
+
+### Tophat Question 1
+
+Stratified sampling is an unbiased sampling method 
+
+* True
+* False
 
 
 # Raster vs Vector Resolution and Conversion Errrors
