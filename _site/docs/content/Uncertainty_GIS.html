@@ -1,0 +1,1015 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <!-- <meta charset="utf-8"> -->
+
+  <title>Reveal.js template</title>
+  <!-- credit https://bl.ocks.org/elipousson/f64814b1ee4aab5d83775bfbf556d35a -->
+
+  <meta name="description" content="Simple Reveal.js slidedeck template. Source files loaded from jsDelivr.">
+  <meta name="author" content="jitesh@spinspire.com">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/reveal.min.css">
+  <link id="theme" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/theme/serif.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    // Load print, pdf stylesheets from jsDelivr
+    var srcUrlPrefix = 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/';
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = srcUrlPrefix + (window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css');
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/lib/js/html5shiv.js"></script>
+    <![endif]-->
+  <style>
+    
+.container {
+  position: fixed;
+    height: 700px;
+    width: 100%;
+}
+
+.title{
+  position: relative;
+  top: 5%;
+}
+
+.subtitle{
+  position: relative;
+  top: 10%;
+}
+
+.question{
+  position: relative;
+  text-align: left;
+  top: 10%;
+}
+
+
+.header {
+  top: 1%;
+  height: 10%;
+  width: 100%;
+  position: absolute;
+  text-align: left;
+}
+
+.full {
+  width: 95%;
+  top:  12%;
+  left: 0%;
+  text-align: left;
+  position: absolute; 
+}
+
+.left {
+  width: 49%;
+  height: 80%;
+  top: 12%;
+  left: 0%;
+  position: absolute;
+  text-align: left;
+}
+
+.right {
+  width: 49%;
+  top: 12%;
+  height: 80%;
+  left: 51%;
+  position: absolute;
+  text-align: left;
+}
+
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.figure {
+  width: 50%;
+  height: 100%;
+  left: 50%;
+  display: flex;
+  margin: auto;
+  position: absolute;
+  text-align: center;
+  display: block;
+  vertical-align: middle;
+}
+
+
+.subfigure {
+  width: 100%;
+  /* height: 100%; */
+  left: 0%;
+  display: flex;
+  margin: auto;
+  position: absolute;
+  text-align: center;
+  display: block;
+  vertical-align: middle;
+}
+
+h1 {
+  display: block;
+  font-size: 3em !important; 
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+  
+h2 {
+  display: block;
+  font-size: 1.5em !important;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+.reveal a {
+  color: blue;
+}
+
+.reveal {
+  background-color: #e6f9fc;
+}
+
+.eq {
+text-align: center !important;
+top: 10%;
+font-size: 80%;
+font-style: italic;
+position: relative;
+}
+
+.caption {
+text-align: center !important;
+font-size: 75%;
+/*outline: 2px solid blue;*/
+/*position: relative;*/
+/*top: 20%;*/
+}
+
+.eqcaption {
+    text-align: center  !important;
+    font-size: 75%;
+    /*outline: 2px solid blue;*/
+    position: relative;
+    top: 20%;
+  }
+
+
+ul {
+    padding-left: 0;
+    font-size: 90%;
+
+} 
+
+ol {
+  counter-reset: item;
+  font-size: 90%;
+  padding-left: 0;
+}
+
+li.nl {
+  display: block;
+}
+
+li.nl:before {
+  content: counters(item, ".") ". ";
+  counter-increment: item;
+}
+
+ol ol li.nl::before {
+    content: counters(item, ".") " ";
+}
+
+#main img {
+    float: left;
+}
+
+.col {
+    flex: 1
+}
+
+
+  </style>
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+        <section>
+            <div class="title">
+                <h1>Uncertainty in GIS</h1>
+            </div>
+            <div class="subtitle">
+                <p class="eq"><b>Uncertainty</b> = Accuracy + Precision + Ambiguity + Vagueness + Logical Fallacies<br>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2 class="header">The First Law of Geography</h2>
+                <div class="left">
+                    <p>Arises from our inability to measure phenomena perfectly <b>and</b> flaws in our conceptual models.</p>
+                    <ul>
+                        <li>Data quality: Instrument limitations, sampling costs, etc.</li>
+                        <li>Generalizations when representing phenomena: i.e., <a href="https://june-skeeter.github.io/Module2_GEOS270/docs/content/Toblers_Law.html#/4">Bonini's Paradox</a></li>
+                        
+                        <li>Incomplete knowledge, misunderstandings, biases, etc.</li>
+                    </ul>
+                </div>
+                <div class="right" style="text-align: center">
+                    <img src="images/confidence_interval_xkcd.png" height="100%" style="border: solid 2px black">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2 class="header">Data Quality</h2>
+                <div class="left">
+                    <p>There is no standardized measure of data quality in GIS.</p>
+                    <ul>
+                      <li>Flaws may pass through many users before discovery.</li>
+                      <li>Must trust the data was collected and processed correctly.</li>
+                      <li>Risk of the users misinterpreting valid products.</li>
+                    </ul>
+                </div>
+                <div class="right" style="text-align: center">
+                  <img src="images/cake.jpg">
+                  <p class="caption">When baking mistakes are obvious.<br>Often in GIS, they are not.</p>
+                </div>
+            </div>
+        </section>
+
+            
+          <section>
+            <div class="container">
+              <h2 class="header">Data Quality</h2>
+              <div class="full">
+                <p>Data must be assessed on a case by case basis.</p>
+                <ol>
+                  <li>Is the resolution of the data sufficient for the scale of my analysis?</li>
+                  <ul>
+                      <li>What is the smallest feature I need to be able to resolve?</li>
+                  </ul>
+                  <li>Is this the most up to date version of this dataset?</li>
+                  <ul>
+                      <li>When was the data published? Has it been updated since?</li>
+                  </ul>
+                  <li>Can I trust the organization publishing this data?</li>
+                  <ul>
+                      <li>Who published the data?  Are they a private or public organization?  Might they have any biases that could impact data quality?</li>
+                  </ul>
+                </ol>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div class="container">
+              <h2 class="header">Error: Accuracy & Precision</h2>
+              <div class="full">
+                <p style="text-align: left;">The terms are related, but the distinction is <b>very</b> important.</p>
+                <p><u>Accuracy</u>: The degree to which a set of measurements correctly matches the real world values.
+                  <ul>
+                    <li>How close is a measurement to the real value?</li>
+                  </ul>
+                </p>
+                <p><u>Precision</u>: The degree of agreement between multiple measurements of the same real world phenomena.
+                  <ul>
+                    <li>How repeatable is a measurement?</li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+          </section>
+
+
+          <section>
+            <div class="container">
+              <h2 class="header">Error: Accuracy & Precision</h2>
+              <div class="left">
+                <ul>
+                  <li><u>Accuracy</u>: A systematic (consistent) offset from the real world value.</li>
+                  <ul>
+                      <li>Errors have a <b>bias</b></li>
+                  </ul>
+                  <li><u>Precision</u>: A random offset from the real world value; </li>
+                  <ul>
+                      <li>Errors are <b>unbiased</b></li>
+                  </ul>
+                  </ul>
+              </div>
+              <div class="right">
+                <img src="images/16-accuracy-vs-precision.png" width="100%" style="border: solid 2px black;">
+                <p class="caption">Accuracy and precision can be quantified.</p>
+              </div>
+            </div>
+          </section>
+
+        <section>
+            <div class="container">
+            <h1 class="title">TopHat Question 1</h1>
+                <div class="question">
+                    <p>Accuracy is biased, it is related to systematic errors in a measurement. Precision is unbiased, it is related to ___ errors in a measurement</p>
+                    <ul>
+                        <li>Skewed</li>
+                        <li>Random</li>
+                        <li>Systematic</li>
+                        <li>Weird</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        
+      <section>
+        <div class="container">
+          <h2 class="header">Quantifying Error</h2>
+          <div class="left">
+            <p>Statistical methods can be used to quantify error.</p>
+            <ul>
+              <li>These measures won't tell us for sure that we are correct, but they can give us some insight.</li>
+              <li>We can quantify any offset (bias) and the spread of the measurements (unbiased)</li>
+            </ul>
+          </div>
+          <div class="right">
+            <img src="images/16-accuracy-vs-precision2.png" width="100%" style="border: solid 2px black;">
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <div class="container">
+          <h2 class="header">Quantifying Accuracy</h2>
+          <div class="left">
+            <p><b>Mean Absolute Error (MAE)</b>:</p>
+            <ul>
+              <li>The absolute value of the error averaged across all samples.</li>
+              <li>How close the samples (observations or estimate) are to be to the true values.</li>
+            </ul>
+          </div>
+          <div class="right">
+            
+            <p class="eq">$MAE = \frac{\sum_{i=1}^N \lvert{x_i-t_i}\rvert}{N}$</p>
+            <p class="eqcaption">$x_i$ = the ith sample value<br>$t_i$ = the ith true value<br>$N$ = the total number of samples</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <h2 class="header">Quantifying Accuracy</h2>
+          <div class="left">
+            <p><b>Mean Squared Error (MSE)</b>:</p>
+            <ul>
+              <li>The squared error averaged across all samples.</li>
+              <li>Similar to MAE, but:</li>
+              <ul>
+                <li>More harshly penalizes <b>large</b> deviations</li>
+                <li>MSE is <b>not</b> in the same units as the original data.</li>
+              </ul>
+            </ul>
+          </div>
+          <div class="right">
+            
+            <p class="eq">$MSE = \frac{\sum_{i=1}^N \left({x_i-t_i}\right)^2}{N}$</p>
+            <p class="eqcaption">$x_i$ = the ith sample value<br>$t_i$ = the ith true value<br>$N$ = the total number of samples</p>
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <div class="container">
+          <h2 class="header">Quantifying Accuracy</h2>
+          <div class="left">
+            <p><b>Root Mean Squared Error (RMSE)</b>:</p>
+            <ul>
+              <li>The square root of the squared error averaged across all samples</li>
+              <li>Same as MSE, except:</li>
+              <ul>
+                <li>With the square root, RMSE <b>is</b> in the same units as the original data</li>
+              </ul>
+              <li>Frequently the preferred metric</li>
+              <ul>
+                <li>No need to memorize equation, but do try to understand what it means</li>
+              </ul>
+            </ul>
+          </div>
+          <div class="right">
+            
+            <p class="eq">$RMSE = \sqrt{\frac{\sum_{i=1}^N \left({x_i-t_i}\right)^2}{N}}$</p>
+            <p class="eqcaption">$x_i$ = the ith sample value<br>$t_i$ = the ith true value<br>$N$ = the total number of samples</p>
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <div class="container">
+          <h2 class="header">Quantifying Precision</h2>
+          <div class="left">
+            <p><b>Standard Deviation ($\sigma$)</b>:</p>
+            <ul>
+              <li>The square root of squared <b>deviation</b> averaged across all samples.</li>
+              <li>Similar to RMSE, except:</li>
+              <ul>
+                <li>Instead of characterizing error, it quantifies the <b>dispersion</b> of a dataset.</li>
+              </ul>
+            </ul>
+          </div>
+          <div class="right">
+            
+            <p class="eq">$\sigma=\sqrt{\frac{\sum_{i=1}^N \left({x_i-\overline{X}}\right)^2}{N}}$</p>
+            <p class="eqcaption">$x_i$ = the ith sample value<br>$\overline{X}$ = the mean of all samples<br>$N$ = the total number of samples</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <h2 class="header">Quantifying Precision</h2>
+          <div class="left">
+            <p><b>Confidence Intervals (CI)</b>:</p>
+            
+            <p>Used to convey our confidence in an estimated average value.</p>
+            <ul>
+              <li>i.e. $\overline{X} = \frac{\sum_{i=1}^Nx_i}{N}$</li>
+              <ul>
+                <li>If the $x_i$ values are close together, we have higher confidence in $\overline{X}$.</li>
+                <li>If the $x_i$ values are more dispersed, we have lower confidence in $\overline{X}$.</li>
+              </ul>
+            </ul>
+          </div>
+          <div class="right">
+            
+            <p class="eq">$CI = \frac{\sigma}{\sqrt{N}} z$</p>
+            <p class="eqcaption">$\sigma$ = the standard deviation<br>$N$ = the total number of samples<br>$z$ = a <a href="https://en.wikipedia.org/wiki/Standard_score">z-score</a></p>
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <div class="container">
+          <h2 class="header">Quantifying Precision</h2>
+          <div class="left">
+            <p><b>Confidence Intervals (CI)</b>:</p>
+            <ul>
+              <li>For <b>Normally Distributed</b> data:</li>
+              <ul>
+                <li>Can be used to specify a confidence level (i.e., 90%, 95%, etc).</li>
+                <li><a href="https://cdnsciencepub.com/doi/full/10.1139/as-2021-0034#sec-3">Typically presented</a> as a range around the mean.</li>
+              </ul>
+            </ul>
+          </div>
+          <div class="right">
+            <img src="images/zscore.png">
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <div class="container">
+          <h2 class="header">Quantifying Precision</h2>
+          <div class="left">
+            <p><b>Inter Quartile Range (IQR)</b>:</p>
+            <ul>
+              <li>For <b>Non-normally Distributed</b> data:</li>
+              <ul>
+                <li><b>Cannot</b> be used to specify a confidence level.</li>
+                <li>But it can give us some idea of the dispersion in a dataset.</li>
+              </ul>
+            </ul>
+          </div>
+          <div class="right">
+            <img src="images/IQR.png">
+          </div>
+        </div>
+      </section>
+        
+
+        <section>
+            <div class="container">
+            <h1 class="title">TopHat Question 2</h1>
+                <div class="question">
+                    <p>Which of the following metrics can be used to describe the accuracy of an estimate?</p>
+                    <ul>
+                        <li>Confidence Interval</li>
+                        <li>Root Mean Squared Error</li>
+                        <li>Standard Deviation</li>
+                        <li>Inter Quartile Range</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+            
+        <section>
+            <div class="container">
+            <h2 class="header">Vagueness and Ambiguity</h2>
+            <div class="full">
+                <p style="text-align: left;">The terms are also related.  The distinction is subtle and can be confusing, but it is important.  Often when something is vague, it is also ambiguous, and vice versa.</p>
+                <p><b>Vagueness</b>: When a definition is not clearly stated or defined.
+                <ul>
+                    <li>Arises when boundaries or labels are poorly defined.</li>
+                </ul>
+                </p>
+                <p><b>Ambiguity</b>: When something can reasonably be interpreted in multiple ways.
+                <ul>
+                    <li>Arises when terms or labels can apply to multiple features.</li>
+                </ul>
+                </p>
+            </div>
+            </div>
+        </section>
+
+
+        <section>
+            <div class="container">
+            <h2 class="header">Vagueness</h2>
+            <div class="left">
+                <ul>  
+                <li>What does <b>“London”</b> refer to:</li>
+                <ul>
+                    <li>London, UK?</li>
+                    <li>London, Ontario?</li>
+                    <li>London Drugs?</li>
+                </ul>
+                <li>The word <b>"bank"</b>:</li>
+                <ul>
+                    <li>A financial institution?</li>
+                    <li>The edge of a river?</li>
+                </ul>
+                </ul>
+            </div>
+            <div class="right">
+                <img src="images/vague_text.jpg" width="100%" style="border: solid 2px black;">
+            </div>
+            </div>
+        </section>
+
+      <section>
+        <div class="container">
+          <h2 class="header">Ambiguity</h2>
+          <div class="left">
+            <ul>
+              <li>Interpretation requires context.</li>
+              <li>Where does a forest end and a grassland begin?</li>
+              <li>The position of objects are unclear or changeable.</li>
+              <ul>
+                <li>Coastal boundary file</li>
+                <ul>
+                    <li>High tide?</li>
+                    <li>Low tide?</li>
+                    <li>Mean water level?</li>
+                </ul>
+              </ul>
+            </ul>
+          </div>
+          <div class="right">
+            <img src="images/ambiguity.png" width="100%" style="border: solid 2px black;">
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <h2 class="header">Qualifying Vagueness and Ambiguity</h2>
+          <div class="full">
+            <p>Ambiguity and vagueness are difficult to quantify numerically.  But they still must be addressed whenever possible.</p>
+            <p><b>The key with these issues</b>: </p>
+              <ul>
+                <li>Present things clearly and thoroughly.</li>
+                <li>Be explicit and transparent when conducting and communicating your work.</li>
+                <li>Try to think through possible misconceptions.</li>
+              </ul>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <h2 class="header">Sources of Uncertainty</h2>
+          <div class="full">
+            <p>Where does uncertainty come from and what can we do to minimize it?</p>
+            <ul>
+                <p class="eq"><b>Uncertainty</b> = Accuracy + Precision + Ambiguity + Vagueness + Logical Fallacies<br></p>
+                <li><b>Accuracy:</b> biases in measurements</li>
+                <li><b>Accuracy:</b> random errors in measurements</li>
+                <li><b>Ambiguity:</b> unclear definition</li>
+                <li><b>Vagueness:</b> multiple interpretations</li>
+                <li><b>Logical Fallacies:</b> any issue not included elsewhere</li>
+            </ul>
+             
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <h2 class="header">Measurements</h2>
+          <div class="full">
+            <p>Some sources of error are out of our control.  The instruments we use to collect data can only so precise.</p>
+            <ul>
+              <li>It is actually impossible to know all the physical quantities of an object.</li>
+              <ul>
+                <li><a href="https://en.wikipedia.org/wiki/Uncertainty_principle">Heisenberg Uncertainty Principle</a>: you cannot concurrently measure a particles exact position and momentum!</li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <h2 class="header">Data Resolution</h2>
+          <div class="full">
+            <p>The concentration of samples in space <b>and</b> time dictates the level of accuracy & precision you can attain.
+            <ul>
+              <li>Lower resolution data is by definition less precise, but not necessarily less accurate.</li>
+              <li>High resolution data can be very precise, but have a significant bias.</li>
+              <li>What do you do if your data are collected at different resolutions?</li>
+              <li>Low resolution result in vagueness & ambiguity.</li>
+            </ul>
+          </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <h2 class="header">Data Entry</h2>
+          <div class="full">
+            <p>Things we do have some control over:
+            <ul>
+              <li>Input datasets & sample sizes.</li>
+              <li>Typos during tabular data entry.</li>
+              <li>Digitizing errors when creating vector features.</li>
+              <ul>
+                <li><b>Gaps</b>: there should be a feature, but there is not.</li>
+                <li><b>Overlaps</b>: one polygon sits over another polygon.</li>
+                <li><b>Slivers</b>: a feature is created between two features when it should not be.</li> 
+              </ul>
+            </ul>
+          </p>
+          </div>
+        </div>
+      </section>
+
+
+
+
+      <section>
+        <div class="container">
+          <h2 class="header">Digitization Errors</h2>
+          <div class="left">
+            <p>Errors that arise when creating vector features:
+            <ul>
+              <li><b>Slivers</b>: a feature is created between two features when it should not be.</li> 
+              <li><b>Gaps</b>: there should be a feature, but there is not.</li>
+              <li><b>Overlaps</b>: one polygon sits over another polygon.</li>
+            </ul>
+          </p>
+          </div>
+          <div class="right">
+            <!-- <div class="fig"> -->
+              <img src="images/digitizing.jpg" alt="missing" class="inline" width="400">
+            <!-- </div> -->
+            
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <div class="container">
+          <h2 class="header">Digitization Errors</h2>
+          <div class="left">
+            <p>Errors that arise when creating vector features:
+            <ul>
+              <li><b>Under/overshoots</b>: vertex misses a connection.</li> 
+              <li><b>Extra nodes</b>: unnecessary vertices.</li>
+              <li><b>Missing features</b>: features or attributes missing.</li>
+            </ul>
+          </p>
+          </div>
+          <div class="right">
+            <img src="images/digitizingerrors.png" alt="missing" class="inline" width="400">
+          </div>
+        </div>
+      </section>
+      
+      <section>
+        <div class="container">
+        <h1 class="title">TopHat Question 3</h1>
+            <div class="question">
+                <p>Digitizing is a type of error that arises when we manually create features.</p>
+                <ul>
+                    <li>True</li>
+                    <li>False</li>
+                </ul>
+            </div>
+        </div>
+     </section>
+
+      <section>
+        <div class="container">
+          <h2 class="header">Labels and Boundaries</h2>
+          <div class="full">
+            <p>Since geographic phenomena often don’t have clear, natural units, we are often forced to assign zones and labels in our work (i.e. <b>Census Data</b>).
+            <ul>
+              <li>A convenient way of simplifying complex processes.</li> 
+              <li>Often <b>vague</b> and/or <b>ambiguous</b>.</li>
+              <li>May be difficult to defend because they are arbitrary.</li>
+              <li>Where to draw a boundary and what to call a zone are likely to vary significantly between different people/groups.</li>
+            </ul>
+          </p>
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <div class="container">
+          <h2 class="header">Data Aggregation</h2>
+          <div class="full">
+            <p>Much of the data we use to learn about society is collected in aggregate.  We take average values for many individuals within a group or area (i.e. <b>Census Data</b>).
+            <ul>
+              <li>Lets us explore the general attributes (e.g. mean, median, etc.) for each group/area.</li> 
+              <li>Compare the attributes between different groups or regions</li>
+              <li>Determine the allocation of resources.</li>
+            </ul>
+          </p>
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <div class="container">
+          <h2 class="header">Conversion and Processing</h2>
+          <div class="full">
+            <p>Even with "perfect" data; GIS operations <a href="https://june-skeeter.github.io/Module5_GEOS270/docs/Content_Part4.html#raster-vs-vector-resolution-and-conversion-errrors">can add uncertainty</a>:
+            <ul>
+              <!-- <li>Each task performed in a GIS will propagate uncertainty.</li>  -->
+              <!-- <li>Tasks can be performed incorrectly.</li> -->
+             <!--  <li>Even "correct" analysis <a href="https://june-skeeter.github.io/Module5_GEOS270/docs/Content_Part4.html#raster-vs-vector-resolution-and-conversion-errrors">can induce error:</a></li>
+              <ul> -->
+                <li>Re-projecting to different coordinate systems.</li>
+                <li>Converting between data types.</li>
+                <li>Perform generalizations (i.e. data classification)</li>
+              <!-- </ul> -->
+            </ul>
+          </p>
+          <p style="text-align: center;">
+            <img src="images/raster2vector.png" alt="missing" class="inline" width="650"></p>
+          </div>
+        </div>
+      </section>
+
+
+
+      <section>
+        <div class="container">
+          <h2 class="header">Logical Fallacies</h2>
+          <div class="full">
+            <p>A flaw in our reasoning that undermines the logic of our argument.</p>
+            <ul>
+              <li>Can be made both by accident and on <i>purpose</i>.</li>
+              <li>Often lacking evidence to support the claims/decisions made, or evidence is presented in a misleading way.</li>
+              <li>“Hasty generalizations” are an example of logical fallacies:</li>
+              <ul>
+                <li>‘I saw a violent protester on TV … Protesters are inciting violence.’</li>
+              </ul>
+            </ul>
+        </div>
+      </section>
+
+       <section>
+        <div class="container">
+          <h2 class="header">Ecological Fallacy</h2>
+          <div class="full">
+            <p>Applying data collected/presented in aggregate for a group/region and applying it to an individual or specific place.</p>
+            <ul>
+              <li>You <b>cannot</b> make an assumption about individuals within a group based on the aggregate data for that group.</li>
+              <li>Census data is averaged for an area</li>
+              <ul>
+                <li>The information about individual values is lost</li>
+              </ul>
+              <li>Basically: don't make assumptions</li>
+              <ul>
+                <li>When you assume ... you make an ass of u and me</li>
+              </ul>
+            </ul>
+        </div>
+      </section>
+
+
+       <section>
+        <div class="container">
+          <h2 class="header">Atomistic Fallacy</h2>
+          <div class="full">
+            <p>When we take aggregated data and aggregate it again at a higher level.</p>
+            <ul>
+                <li>You can't take the average of averages and expect to get the correct value</li>
+                <li>e.g.,</li>
+                <ul>
+                    <li>Group 1 (10, 15, 15, 15, 20): mean = 15</li>
+                    <li>Group 2 (5, 15): mean = 10</li>
+                    <li>Mean of Groups (Group 1 + Group 2)/2 = 12.5</li>
+                    <li>Population Mean = 13.571</li>
+                </ul>
+              </ul>
+            </ul>
+        </div>
+      </section>
+
+
+       <section>
+        <div class="container">
+          <h2 class="header"">Atomistic Fallacy</h2>
+          <div class="full" style="text-align:center;">
+          <img src="images/Atomistic_2.png" alt="missing" class="inline" width="750">
+          <p><a href="https://github.com/GEOS270/Module6/blob/main/data/AtomisticFallacy.zip">See here for a proof</a></p>
+        </div>
+      </section>
+
+       <section>
+        <div class="container">
+          <h2 class="header"">Atomistic Fallacy</h2>
+          <div class="left">
+            <p>The US Electoral College is an example of this in practice:</p>
+            <ul>
+              <li>Totaling votes <b>per</b> state.</li>
+              <li>... then totaling "delegates" <b>by</b> state.</li>
+            </ul>
+        </div>
+        <div class="right">
+          <img src="images/atomistic.png" width="100%" style="border: solid 2px black">
+        </div>
+      </section>
+
+       <section>
+        <div class="container">
+          <h2 class="header">Modifiable Areal Unit Problem</h2>
+          <div class="left">
+            <p>Modifiable, arbitrary boundaries can have a significant impact on descriptive statistics for areas.
+              <ul>
+                <li>When areas are grouped together, the way you choose to group them can change the values of the groups.</li>
+                <li>See this <a href="https://www.youtube.com/watch?v=w-DMtRJrtWA&feature=emb_imp_woyt">video</a> for more context.</li>
+              </ul>
+            </p>
+         </div>
+        <div class="right">
+          <img src="images/MAUP1.png" width="100%" style="border: solid 2px black">
+        </div>
+      </section>
+
+
+       <section>
+        <div class="container">
+          <h2 class="header">Modifiable Areal Unit Problem</h2>
+          <div class="left">
+            <p>Data collected at a finer level of detail is being combined into larger areas of lower detail that can be manipulated.
+              <ul>
+                <li>Used to imply things that are not necessarily true.</li>
+                <li>Serious ethical implications.</li>
+                <li>Gerrymandering is a prime example.</li>
+              </ul>
+            </p>
+        </div>
+        <div class="right">
+          <img src="images/gerrymander_0.png" width="80%" style="border: solid 2px black">
+          <!-- <p class="caption"></p> -->
+        </div>
+      </section>
+
+
+       <section>
+        <div class="container">
+          <h2 class="header">Modifiable Areal Unit Problem</h2>
+          <div class="full" style="text-align:center">
+          <img src="images/gerrymander_nc.png" width="80%" style="border: solid 2px black">
+          <!-- <p class="caption">North Carolina</p> -->
+        </div>
+      </section>
+
+
+       <section>
+        <div class="container">
+          <h2 class="header">Modifiable Areal Unit Problem</h2>
+          <div class="full" style="text-align:center">
+          <img src="images/gerrymander_md.png" width="80%" style="border: solid 2px black">
+          <!-- <p class="caption">Maryland</p> -->
+        </div>
+      </section>
+
+
+       <section>
+        <div class="container">
+          <h2 class="header">Modifiable Areal Unit Problem</h2>
+          <div class="full" style="text-align:center">
+          <img src="images/gerrymander_al.png" width="80%" style="border: solid 2px black">
+          <!-- <p class="caption">Alabama</p> -->
+        </div>
+      </section>
+
+      
+      <section>
+        <div class="container">
+        <h1 class="title">TopHat Question 4</h1>
+            <div class="question">
+                <p>Gerrymandering exploits the atomistic fallacy to skew election results.</p>
+                <ul>
+                    <li>True</li>
+                    <li>False</li>
+                </ul>
+            </div>
+        </div>
+     </section>
+
+      <section>
+        <div class="container">
+          <h2 class="header">Error Propagation</h2>
+          <div class="left">
+            <p>Errors are <b>cumulative</b>:
+              <ul>
+                <li>Uncertainty will propagate through the model/system.</li>
+                <li>Errors made early on will be compounded as the move through a project!</li>
+                <li>Some errors are unavoidable</li>
+                <ul>
+                    <li>So we need to be careful to avoid the ones we can!</li>
+                </ul>
+              </ul>
+            </p>
+          </div>
+          <div class="right">
+            <img src="images/error_prop.jpg" width="100%" style="border: solid 2px black">
+          </div>
+        </div>
+      </section>
+
+    </div><!-- .slides -->
+
+    
+  </div><!-- .reveal -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/reveal.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/plugin/math/math.min.js"></script>
+
+  <script>
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
+      overview: false,
+      loop: false,
+      margin: 0.03,
+      width: 1350,
+      height: 700,
+      transition: 'none',
+      plugins: [ RevealMath.MathJax2,
+    // RevealMarkdown
+         ]
+    },
+
+
+    );
+  </script>
+</body>
+
+</html>

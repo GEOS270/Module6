@@ -51,12 +51,3 @@ Raster resolution is determined by the:
 * Number of bands in the raster
 * All of the above
 
-<!-- This videos give some visual examples of raster vs vector resolution 
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/bG5E8YzqI0A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-
-<!-- # Modifiable Aereal Unit Problem (MAUP) 
-
-This video covers the Modifiable Aereal Unit Problem (MAUP) and other examples of error.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/w-DMtRJrtWA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->

@@ -1,4 +1,4 @@
-I"R<h1 id="sampling-and-inverse-distance-weighting">Sampling and Inverse Distance Weighting</h1>
+I"f<h1 id="sampling-and-inverse-distance-weighting">Sampling and Inverse Distance Weighting</h1>
 
 <p>This <a href="https://github.com/GEOS270/Module6/blob/main/data/Sampling_Interpolation.zip">Arc Project</a> shows how we can create random points in Arc and use them collect samples.  It also shows how we can run inverse distance weighting and highlights the influence of sample size and sampling method.</p>
 
@@ -26,13 +26,26 @@
 
 <p>This <a href="https://github.com/GEOS270/Module6/blob/main/data/Resolution_and_Conversion.zip">Arc Project</a> shows how we can create lines and polygons from points in Arc and illustrates the concept of vector resolution.  It also shows how we can create rasters from vector features (points, lines, or polygons), illustrates the concept of raster resolution, and shows how errors can cascade when converting between data models.</p>
 
-<!-- This videos give some visual examples of raster vs vector resolution 
+<h3 id="tophat-question-3">TopHat Question 3</h3>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/bG5E8YzqI0A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+<p>Vector resolution is determined by the:</p>
 
-<!-- # Modifiable Aereal Unit Problem (MAUP) 
+<ul>
+  <li>Cell size</li>
+  <li>Number of vertices (points)</li>
+  <li>Number of columns in the attribute table</li>
+  <li>All of the above</li>
+</ul>
 
-This video covers the Modifiable Aereal Unit Problem (MAUP) and other examples of error.
+<h3 id="tophat-question-4">TopHat Question 4</h3>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/w-DMtRJrtWA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+<p>Raster resolution is determined by the:</p>
+
+<ul>
+  <li>Cell size</li>
+  <li>Extent of the raster</li>
+  <li>Number of bands in the raster</li>
+  <li>All of the above</li>
+</ul>
+
 :ET

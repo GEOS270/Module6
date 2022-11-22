@@ -1,26 +1,15 @@
----
-layout: default
-title: Uncertainty in GIS
-parent: Sampling, Uncertainty, and Ethics
-# has_children: True
-nav_order: 3
----
-
-<!-- 
+I"i<!-- 
 <script type="text/javascript" async
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
  -->
 
-# Uncertainty in GIS
-
-
+<h1 id="uncertainty-in-gis">Uncertainty in GIS</h1>
 
 <div style="overflow: hidden;
   padding-top: 56.25%;
   position: relative">
-  <iframe src="content/Uncertainty_GIS.html" title="Processes" scrolling="no" frameborder="0"
-    style="border: 0;
+  <iframe src="content/Uncertainty.html" title="Processes" scrolling="no" frameborder="0" style="border: 0;
    height: 100%;
    left: 0;
    position: absolute;
@@ -29,5 +18,6 @@ nav_order: 3
    <p>Your browser does not support iframes.</p>
  </iframe>
 </div>
-<a href="content/Uncertainty_GIS.html" target="_blank">View Slides in New Tab</a>
+<p><a href="content/Uncertainty_GIS.html" target="_blank">View Slides in New Tab</a></p>
 
+:ET
