@@ -1,43 +1,13 @@
----
-layout: default
-title: Ethics in GIS
-parent: Sampling, Uncertainty, and Ethics
-# has_children: True
-nav_order: 4
----
+I"°<h1 class="no_toc" id="ethics-in-gis">Ethics in GIS</h1>
 
-# Ethics in GIS
-{: .no_toc }
+<p>GIS, more than many disciplines has immense potential to have an impact on peoples lives.</p>
 
-
-<div style="overflow: hidden;
-  padding-top: 56.25%;
-  position: relative">
-  <iframe src="content/Ethics.html" title="Processes" scrolling="no" frameborder="0"
-    style="border: 0;
-   height: 100%;
-   left: 0;
-   position: absolute;
-   top: 0;
-   width: 100%;">
-   <p>Your browser does not support iframes.</p>
- </iframe>
-</div>
-<a href="content/Ethics.html" target="_blank">View Slides in New Tab</a>
-
-
-
-<!-- 
-GIS, more than many disciplines has immense potential to have an impact on peoples lives.
-
-<details open markdown="block">
-  <summary>
+<details open="">
+  <summary class="text-delta">
     Table of contents
   </summary>
-  {: .text-delta }
-1. TOC
-{:toc}
-</details> -->
+
+</details>
 
 <!-- 
 # What is Ethics?
@@ -190,3 +160,4 @@ No references to published work or other secondary sources of information: 100 %
 <img src='content/images/ILUOP_2.png'>
  -->
 
+:ET

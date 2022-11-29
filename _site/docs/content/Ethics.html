@@ -1,0 +1,745 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <!-- <meta charset="utf-8"> -->
+
+  <title>Reveal.js template</title>
+  <!-- credit https://bl.ocks.org/elipousson/f64814b1ee4aab5d83775bfbf556d35a -->
+
+  <meta name="description" content="Simple Reveal.js slidedeck template. Source files loaded from jsDelivr.">
+  <meta name="author" content="jitesh@spinspire.com">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/reveal.min.css">
+  <link id="theme" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/theme/serif.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    // Load print, pdf stylesheets from jsDelivr
+    var srcUrlPrefix = 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/';
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = srcUrlPrefix + (window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css');
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/lib/js/html5shiv.js"></script>
+    <![endif]-->
+  <style>
+    
+.container {
+  position: fixed;
+    height: 700px;
+    width: 100%;
+}
+
+.title{
+  position: relative;
+  top: 5%;
+}
+
+.subtitle{
+  position: relative;
+  top: 10%;
+}
+
+.question{
+  position: relative;
+  text-align: left;
+  top: 10%;
+}
+
+
+.header {
+  top: 1%;
+  height: 10%;
+  width: 100%;
+  position: absolute;
+  text-align: left;
+}
+
+.full {
+  width: 95%;
+  top:  12%;
+  left: 0%;
+  text-align: left;
+  position: absolute; 
+}
+
+.left {
+  width: 49%;
+  height: 80%;
+  top: 12%;
+  left: 0%;
+  position: absolute;
+  text-align: left;
+}
+
+.right {
+  width: 49%;
+  top: 12%;
+  height: 80%;
+  left: 51%;
+  position: absolute;
+  text-align: left;
+}
+
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.figure {
+  width: 50%;
+  height: 100%;
+  left: 50%;
+  display: flex;
+  margin: auto;
+  position: absolute;
+  text-align: center;
+  display: block;
+  vertical-align: middle;
+}
+
+
+.subfigure {
+  width: 100%;
+  /* height: 100%; */
+  left: 0%;
+  display: flex;
+  margin: auto;
+  position: absolute;
+  text-align: center;
+  display: block;
+  vertical-align: middle;
+}
+
+h1 {
+  display: block;
+  font-size: 3em !important; 
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+  
+h2 {
+  display: block;
+  font-size: 1.5em !important;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+.reveal a {
+  color: blue;
+}
+
+.reveal {
+  background-color: #e6f9fc;
+}
+
+.eq {
+text-align: center !important;
+top: 10%;
+font-size: 80%;
+font-style: italic;
+position: relative;
+}
+
+.caption {
+text-align: center !important;
+font-size: 75%;
+/*outline: 2px solid blue;*/
+/*position: relative;*/
+/*top: 20%;*/
+}
+
+.eqcaption {
+    text-align: center  !important;
+    font-size: 75%;
+    /*outline: 2px solid blue;*/
+    position: relative;
+    top: 20%;
+  }
+
+
+ul {
+    padding-left: 0;
+    font-size: 90%;
+
+} 
+
+ol {
+  counter-reset: item;
+  font-size: 90%;
+  padding-left: 0;
+}
+
+li.nl {
+  display: block;
+}
+
+li.nl:before {
+  content: counters(item, ".") ". ";
+  counter-increment: item;
+}
+
+ol ol li.nl::before {
+    content: counters(item, ".") " ";
+}
+
+#main img {
+    float: left;
+}
+
+.col {
+    flex: 1
+}
+
+
+  </style>
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+        <section>
+            <div class="title">
+                <h1>Ethics in GIS</h1>
+            </div>
+            <div class="subtitle">
+                <p>GIS, more than many disciplines has immense potential to have an impact on peoples lives.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2 class="header">What is Ethics</h2>
+                <div class="left">
+                    <p>Ethics is a branch of philosophy that deals with the nature of right and wrong. It is a theory or set of standards that inform moral practice.</p>
+                    <ul>
+                        <li>Ethics and legality are not synonymous</li>
+                        <ul>
+                            <li>Though the laws we have constructed as a society may be informed by morality</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="right" style="text-align: center">
+                    <img src="images/Ethics.png" width="100%" style="border: solid 2px black">
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="container">
+                <h2 class="header">Ethics vs. Legality</h2>
+                <div class="left" style="text-align: center">
+                    <img src="images/Police.jpg" width="69%" style="border: solid 2px black">
+                    <h4>Legal but Unethical</h4>
+                </div>
+                <div class="right" style="text-align: center">
+                    <img src="images/Protest.png" width="100%" style="border: solid 2px black">
+                    <h4>Ethical but Illegal</h4>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+            <h1 class="title">TopHat Question 1</h1>
+                <div class="question">
+                    <p>This branch of philosophy deals with the nature of right and wrong:</p>
+                    <ul>
+                        <li>Logic</li>
+                        <li>Ethics</li>
+                        <li>Epistemology</li>
+                        <li>Metaphysics</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2 class="header">Ethics in Science</h2>
+                <div class="full">
+                    <p>Research often involves handling the private, personal information about individuals and minority groups:</p>
+                    <ul>
+                        <li>Potential participants must be able to trust that their information will be used in a safe and respected manner.</li>
+                        <li>In some fields, ethics boards often review research proposals to ensure best practices are used.</li>
+                        <ul>
+                            <li>How will the data be used?</li>
+                            <li>Who will have access to data/results?</li>
+                            <li>What identifying information will be used/released?</li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="container">
+                <h2 class="header">Ethics in GIS</h2>
+                <div class="full">
+                    <p>GIS has the potential to be <b>more</b> intrusive in to people’s every day lives other sciences:</p>
+                    <ul>
+                        <li>We can know where people are at any given time</li>
+                        <li>We can guess at what they are doing reasonably well</li>
+                        <li>We can know where people shop, approximately how much money they make, who they know, and to which organizations they belong</li>
+                        <li>We can know if they belong to minority groups:</li>
+                        <ul>
+                            <li>E.g., racial minorities, religious minorities, political groups, LGBT+</li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </section>
+               
+        <section>
+            <div class="container">
+                <h2 class="header">Data Privacy and Security</h2>
+                <div class="left">
+                    <p>More detail gives = more accurate; allows for better decision making but infringes on privacy.</p>
+                    <ul>
+                        <li>How specific is too specific?</li>
+                        <ul>
+                            <li>Point locations risk exposing personal information</li>
+                        </ul>
+                        <li>Guidelines surrounding exposure of information</li>
+                        <ul>
+                            <li>Public health agencies don't release information about individuals</li>
+                            <li>Stats Canada masks census data when they don't get enough respondents</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="right">
+                    <img src="images/COVID_Map.jpg" width="100%" style="border: solid 2px black">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2 class="header">The Power of a Line</h2>
+                <div class="full">
+                    <p>What side of a border you live up on can have drastic impacts on outcomes.  Where you live determines:</p>
+                    <ul>
+                        <li>What rights you have</li>
+                        <li>What schools you attend</li>
+                        <li>How much your vote matters (if you even get to vote)</li>
+                        <li>How much you pay in taxes</li>
+                        <li>What services you have access too</li>
+                        <li>Where you can travel</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2 class="header">The Power of a Line</h2>
+                <div class="left">
+                    <p>Borders are often <b>arbitrary</b> and <b>modifiable</b>.</p>
+                    <ul>
+                        <li>Think back to the modifiable areal unit problem</li>
+                        <ul>
+                            <li>The decisions of a few can impact many</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="right">
+                    <img src="images/gerrymander_0.png" width="100%" style="border: solid 2px black">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+            <h1 class="title">TopHat Question 2</h1>
+                <div class="question">
+                    <p>The modifiable areal unit problem is a serious problem.  Instead of voters choosing their politicians, it allows politicians to choose their ____.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2 class="header">Data Representation</h2>
+                <div class="full">
+                    <p>Every cartographic choice you make can have ramifications.</p>
+                    <ul>
+                        <li>How we choose to display our data can have a big impact on how it is perceived</li>
+                        <ul>
+                            <li>Maps influence the way people think</li>
+                            <li>They can reinforce (or counter) biases individuals may hold</li>
+                        </ul>
+                        <li>All maps lie, but some lie more than others.</li>
+                        <ul>
+                            <li>Abstraction is a necessary part of map making</li>
+                            <li>But it needs to be done carefully</li>
+                        </ul>
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="container">
+                <h2 class="header">All Maps Lie</h2>
+                <div class="left">
+                    <p>Sometimes the lies are intentional.</p>
+                    <ul>
+                        <li>Maps can be crafted to sway public opinion and influence political outcomes</li>
+                        <ul>
+                            <li>This is a serious ethical issue</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="right">
+                    <img src="images/gerrymander_nc.png" width="100%" style="border: solid 2px black">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2 class="header">All Maps Lie</h2>
+                <div class="left">
+                    <p>Sometimes the lies are careless oversights.</p>
+                    <ul>
+                        <li>Different map projections cause areas to be different sizes</li>
+                        <ul>
+                            <li>It may not be an intentional choice by the map maker</li>
+                            <li>Nonetheless it will influence the way people think</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="right">
+                    <img src="images/Projection.jpg" width="100%" style="border: solid 2px black">
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="container">
+                <h2 class="header">All Maps Lie</h2>
+                <div class="left">
+                    <p>Sometimes the lack of context is the issue.</p>
+                    <ul>
+                        <li>Different unit sizes mean this map over-represents republicans</li>
+                        <ul>
+                            <li>It may not be an intentional choice by the map maker</li>
+                            <li>Nonetheless it will influence the way people think</li>
+                            <li>There are strategies to correct these issues</li>
+                            <ul>
+                                <li>More context</li>
+                                <li>Adjust the map</li>
+                            </ul>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="right">
+                    <img src="images/nocontext.png" width="100%" style="border: solid 2px black">
+                    <h5>US House of Representatives 2022 Election</h5>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="container">
+                <h2 class="header">All Maps Lie</h2>
+                <div class="left">
+                    <p>Sometimes the lack of context is the issue.</p>
+                    <ul>
+                        <li>Different unit sizes mean this map over-represents republicans</li>
+                        <ul>
+                            <li>It may not be an intentional choice by the map maker</li>
+                            <li>Nonetheless it will influence the way people think</li>
+                            <li>There are strategies to correct these issues</li>
+                            <ul>
+                                <li>More context</li>
+                                <li>Adjust the map</li>
+                            </ul>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="right">
+                    <img src="images/context.png" width="100%" style="border: solid 2px black">
+                    <h5>US House of Representatives 2022 Election</h5>
+                    <h5>Equally Sized Districts</h5>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2 class="header">All Maps Lie</h2>
+                <div class="left">
+                    <p>Sometimes the lack of context is the issue.</p>
+                    <ul>
+                        <li>Different unit sizes mean this map over-represents republicans</li>
+                        <ul>
+                            <li>It may not be an intentional choice by the map maker</li>
+                            <li>Nonetheless it will influence the way people think</li>
+                            <li>There are strategies to correct these issues</li>
+                            <ul>
+                                <li>More context</li>
+                                <li>Adjust the map</li>
+                            </ul>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="figure">
+                    <img src="images/president.png" height="80%" style="border: solid 2px black">
+                    <h5>Cartograms of 2020 Presidential Election</h5>
+                </div>
+            </div>
+        </section>
+
+        
+        <section>
+            <div class="container">
+                <h2 class="header">Who Has Access to GIS?</h2>
+                <div class="full">
+                    <p>Who has access to GIS?  ESRI products (e.g. ArcGIS Pro) have very expensive licensing fees.  Beyond just the cost of the software, hardware to run GIS is not always accessible, and GIS training takes time.  </p>
+                    <ul>
+                        <li>There are options to make GIS more accessible to the public</li>
+                        <li>But they can only go so far</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="container">
+                <h2 class="header">Open Source GIS</h2>
+                <div class="full">
+                    <p>Open source software is free to access, platforms are created and maintain by volunteers.  There are open source alternatives that can provide some access to GIS:</p>
+                    <ul>
+                        <li><a href="https://qgis.org/en/site/">QGIS</a> is an application with similar functionality to ArcGIS Pro.</li>
+                        <li>Python, R, JavaScript etc. are open source programming languages that have many GIS packages</li>
+                        <li>Free help pages like <a href="https://gis.stackexchange.com/">stackexchange</a> and github doc's pages e.g., <a href="https://github.com/qgis/QGIS">qgis</a> can help with training, but they require a base level of knowledge first.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+            <h1 class="title">TopHat Question 3</h1>
+                <div class="question">
+                    <p>Open source software and documentation make GIS more</p>
+                    <ul>
+                        <li>Profitable</li>
+                        <li>Accessible</li>
+                        <li>Difficult</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="container">
+                <h2 class="header">Public Participation in GIS</h2>
+                <div class="full">
+                    <p>There are many ways the public can be involved in GIS; the can participate actively or passively.</p>
+                    <ul>
+                        <li>Public engagement is crucial way to increase representation of opinions and trust in institutions</li>
+                        <li>Not all participatory approaches are centered on engagement</li>
+                        <ul>
+                            <li>They can also be passive</li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="container">
+                <h2 class="header">Volunteer Geographic Information</h2>
+                <div class="full">
+                    <p>The collection, processing, assembly, and dissemination of geographic data provided voluntarily by individuals.  Is sometimes, part of participatory approaches to GIS; sometimes its just using freely provided information that people are unaware of.</p>
+                    <ul>
+                        <li>This is equally likely to be used for commercial purposes as it is for participatory, educational, and other non-commercial uses: E.g. Trip Advisor, Flickr, Twitter, etc.</li>
+                        <li>Usually some sort of "wisdom of the crowds" is used to validate data, or else data verification and validation is performed by the organizing group</li>
+                        <ul>
+                            <li>See <a href="http://localhost:4000/docs/content/Chae_et_al_2015.pdf">Chae et al. (2025)</a></li>
+                        </ul>
+                        
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+                
+        <section>
+            <div class="container">
+                <h2 class="header">Citizen Science</h2>
+                <div class="full">
+                    <p>Allows interested volunteers and researchers to team up to address some scientific question.</p>
+                    <ul>
+                        <li>Volunteers provide the “leg work” of data collection, data cleaning, and initial interpretation of field data; guided by scientific research experts</li>
+                        <li>Participation levels can range from simple data collection through to contributing to academic journal submission.</li>
+                        <ul>
+                            <li>The <a href="https://maps.cocorahs.org/">COCORAHS</a> platform is a great example!</li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2 class="header">Participatory GIS</h2>
+                <div class="full">
+                    <p>The goal is the empowerment and inclusion of marginalized people.  These groups tend to have little or no voice due to extremes of location, poverty, racism, sexism, anti-religious feelings, etc.  </p>
+                    <ul>
+                        <li>Begins through a process of community mapping, with many steps and a set of long-term goals for the community</li>
+                        <ul>
+                            <li>Members of the community generate their own data and construct their own maps</li>
+                            <li>Bring members together to share their maps and combine into a community map/database</li>
+                            <li>These community efforts can then be coded into a GIS to systematize the community’s knowledge and allow for greater spatial analysis to occur</li>
+                        </ul>
+                        <li>Emphasizes engagement throughout the GIS process</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        
+        <section>
+            <div class="container">
+                <h2 class="header">Inuit Land Use and Occupancy Project</h2>
+                <div class="left">
+                    <p>Participatory GIS to safeguard Inuit rights to Arctic lands and waters.</p>
+                    <ul>
+                        <li>Inuit People became increasingly concerned about resource extraction projects</li>
+                        <li>Commissioned a study on land use and occupancy that was instrumental in the establishment of Nunavut</li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <img src="images/ILUOP_1.png" height="100%" style="border: solid 2px black">
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <div class="container">
+                <h2 class="header">Inuit Land Use and Occupancy Project</h2>
+                <div class="left">
+                    <p>No references to published work or other secondary sources of information:</p>
+                    <ul>
+                        <li>Existing maps and information had significant colonial bias</li>
+                        <li>100 % Original Data collection from Inuit Sources</li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <img src="images/ILUOP_2.png" height="100%" style="border: solid 2px black">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2 class="header">Positionality</h2>
+                <div class="full">
+                    <p>It is important to reflect on your relation to your work.  In the social sciences, positionality is especially important, because a researches privileges, biases, and preconceptions can drastically impact the people and communities they are working with.  </p>
+                    <ul>
+                        <li>In some of the "hard" sciences, there are often a claims of total objectivity, but complete objectivity is <b>impossible</b>.</li>
+                        <li>No one is completely objective, that must be understood and acknowledged regardless of the field.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2 class="header">Positionality</h2>
+                <div class="full">
+                    <p>Some important questions to ask yourself, and things you may want to disclose depending on the context.</p>
+                    <ul>
+                        <li>Who am I and where do I come from?</li>
+                        <li>What is my relationship to the community/field I am working in?</li>
+                        <li>What are my motivations for this work?</li>
+                        <ul>
+                            <li>What biases may I have and how may my past experiences influence how I engage with this work?</li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        
+        <section>
+            <div class="container">
+            <h1 class="title">TopHat Question 4</h1>
+                <div class="question">
+                    <p>This is the concept of reflecting on your relation to your work, what your motivations are, and what biases you might have.</p>
+                    <ul>
+                        <li>Objectivity</li>
+                        <li>Positionality</li>
+                        <li>GIS Ethics</li>
+                        <li>Cartography</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </div><!-- .slides -->
+
+    
+  </div><!-- .reveal -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/reveal.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/plugin/math/math.min.js"></script>
+
+  <script>
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
+      overview: false,
+      loop: false,
+      margin: 0.03,
+      width: 1350,
+      height: 700,
+      transition: 'none',
+      plugins: [ RevealMath.MathJax2,
+    // RevealMarkdown
+         ]
+    },
+
+
+    );
+  </script>
+</body>
+
+</html>
