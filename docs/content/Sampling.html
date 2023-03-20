@@ -670,14 +670,53 @@ ol ol li.nl::before {
             <div class="container">
                 <h2 class="header">Inverse Distance Weighting</h2>
                 <div class = "full">
-                    <p>One of the most common methods.</p>
+                    <p>Calculates cell values based on nearby observations.</p>
                     <ul>
-                        <li>Calculates cell values based on nearby observations</li>
-                        <ul>
-                            <li>Weight cells by distance from observation points</li>
-                        </ul>
+                        <li>Weight cells by distance from observation points</li>
+                        <li>Mathematical expression of Tobler's Law</li>
                     </ul>
                     <img src="images/IDW.png" width="100%" style="border: solid 2px black; background-color: white;">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2 class="header">Inverse Distance Weighting</h2>
+                <div class = "left">
+                    <p>Best applied to discrete samples of continuous quantitative variables.</p>
+                    <ul>
+                        <li>Elevation</li>
+                        <li>Temperature</li>
+                        <li>Precipitation</li>
+                    </ul>
+                </div>
+                <div class="figure">
+                    <span class="helper"></span>
+                    <img src="images/IDW2.png" width="100%" style="border: solid 2px black; background-color: white;">
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="container">
+                <h2 class="header">Kernel Density</h2>
+                <div class = "left">
+                    <p>Calculates the "density" of discrete point observations/samples and converts to a raster surface</p>
+                    <ul>
+                        <li>Shows the probability of occurrence at any given location</li>
+                        <ul>
+                            <li>Weight cells by "value" of points</li>
+                        </ul>
+                        <li>Often applied to counts of qualitative data</li>
+                        <ul>
+                            <li>Disease outbreaks</li>
+                            <li>Crime data</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="figure">
+                    <img src="images/Final_Map.png" height="100%" style="border: solid 2px black; background-color: white;">
                 </div>
             </div>
         </section>

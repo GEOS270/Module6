@@ -11,12 +11,21 @@ This module will discuss techniques for spatial sampling and interpolation, foll
 
 ## Getting close to the end!
 
-This module contains the last lab assignment of the term and the last of the remaining lecture content.
+Here is a week by week breakdown of what's left to cover.  
 
-* Tuesday Nov 15th - Sampling & Interpolation
-* Thursday Nov 17th - Applied Examples
-* Tuesday Nov 22nd - Uncertainty in GIS
-* Thursday Nov 24th - Extra Lab Help: **No Lecture**
-* Tuesday Nov 29th - Ethics in GIS
-* Thursday Dec 1st - GIS Applications and GIS Programming (**extra credit opportunity**)
-* Tuesday Dec 6th - Last Day of Class! Exam Review 
+* Week of Mar 20th
+    * Sampling & Interpolation
+    * Applied Examples
+* Week of Mar 27th
+    * Uncertainty in GIS
+    * Ethics in GIS
+    * **Proposals Due**
+        * Help in office hours 
+        * Feedback for those who submit early
+* Week of Apr 3rd
+    * Ethics in GIS Cont.
+    * GIS Programming (**extra credit opportunity**)
+* Week of Apr 10th
+    * GIS Applications 
+    * Exam Review 
+    * Projects Due
