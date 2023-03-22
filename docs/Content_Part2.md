@@ -34,6 +34,28 @@ nav_order: 1
 
 
 
+# Sampling and Inverse Distance Weighting
+
+This [Arc Project](https://github.com/GEOS270/Module6/blob/main/data/Sampling_Interpolation.zip) shows how we can create random points in Arc and use them collect samples.  It also shows how we can run inverse distance weighting and highlights the influence of sample size and sampling method.
+
+### TopHat Question 5
+
+Stratified sampling is an unbiased sampling method. 
+
+* True
+* False
+
+### TopHat Question 6
+
+Spatial ___ is a way to "fill in the blanks".  We can it to estimate the values of a continuous field (raster) from samples at point locations.
+
+* Extrapolation
+* Interpolation
+* Explanation
+* Interpretation
+
+
+
 <!-- See [**this link**](https://github.com/June-Skeeter/Module6_GEOS270/blob/main/docs/content/Nov_17.pdf) for a .pdf copy of the lecture (*note the formatting is not perfect*)
 
 See [**this link**](https://github.com/June-Skeeter/Module6_GEOS270/blob/main/docs/content/Error_Examples.zip) if you would like a copy of the ArcPro Error_Examples project file to play around with on your own. -->

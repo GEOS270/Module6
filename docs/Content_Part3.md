@@ -3,18 +3,10 @@ layout: default
 title: Uncertainty in GIS
 parent: Sampling, Uncertainty, and Ethics
 # has_children: True
-nav_order: 3
+nav_order: 2
 ---
 
-<!-- 
-<script type="text/javascript" async
-  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
- -->
-
 # Uncertainty in GIS
-
-
 
 <div style="overflow: hidden;
   padding-top: 56.25%;
