@@ -6,7 +6,15 @@ parent: Sampling, Uncertainty, and Ethics
 nav_order: 2
 ---
 
+<!-- 
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+ -->
+
 # Uncertainty in GIS
+
+
 
 <div style="overflow: hidden;
   padding-top: 56.25%;
