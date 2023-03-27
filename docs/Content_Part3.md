@@ -31,3 +31,29 @@ nav_order: 2
 </div>
 <a href="content/Uncertainty_GIS.html" target="_blank">View Slides in New Tab</a>
 
+## Logical Fallacies
+
+This [example](https://github.com/GEOS270/Module6/blob/main/data/AtomisticFallacy.zip) can help explain the atomistic fallacy and also highlight the influence of modifiable area unit problem (MAUP).
+
+## Resolution and Data Model Conversion
+
+This [Arc Project](https://github.com/GEOS270/Module6/blob/main/data/Resolution_and_Conversion.zip) shows how we can create lines and polygons from points in Arc and illustrates the concept of vector resolution.  It also shows how we can create rasters from vector features (points, lines, or polygons), illustrates the concept of raster resolution, and shows how errors can cascade when converting between data models.
+
+### TopHat Question 5
+
+Vector resolution is determined by the:
+
+* Cell size
+* Number of vertices (points)
+* Number of columns in the attribute table
+* All of the above
+
+### TopHat Question 6
+
+Raster resolution is determined by the:
+
+* Cell size
+* Extent of the raster
+* Number of bands in the raster
+* All of the above
+
