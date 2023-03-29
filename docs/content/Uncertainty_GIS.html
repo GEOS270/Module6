@@ -828,40 +828,56 @@ ol ol li.nl::before {
         </div>
       </section>
 
-
-       <section>
-        <div class="container">
-          <h2 class="header">Atomistic Fallacy</h2>
-          <div class="full">
-            <p>When we take aggregated data and aggregate it again at a higher level.</p>
-            <ul>
-                <li>You can't take the average of averages and expect to get the correct value</li>
-                <li>e.g.,</li>
-                <ul>
-                    <li>Group 1 (10, 15, 15, 15, 20): mean = 15</li>
-                    <li>Group 2 (5, 15): mean = 10</li>
-                    <li>Mean of Groups (Group 1 + Group 2)/2 = 12.5</li>
-                    <li>Population Mean = 13.571</li>
-                </ul>
-              </ul>
-            </ul>
-        </div>
-      </section>
-
-       <section>
+      <section>
         <div class="container">
           <h2 class="header"">Atomistic Fallacy</h2>
           <div class="left">
-            <p>The US Electoral College is an example of this in practice:</p>
+            <p>When we take aggregated data and aggregate it again at a higher level.  You <b>can't</b> take the average of averages.</p>
             <ul>
-              <li>Totaling votes <b>per</b> state.</li>
-              <li>... then totaling "delegates" <b>by</b> state.</li>
+              <li>The US Electoral College is an example of this in practice:</li>
+              <ul>
+                <li>Totaling votes <b>per</b> state ... then totaling "delegates" <b>by</b> state.</li>
+              </ul>
             </ul>
         </div>
         <div class="right">
           <img src="images/atomistic.png" width="100%" style="border: solid 2px black">
         </div>
       </section>
+
+       <section>
+        <div class="container">
+          <h2 class="header">Atomistic Fallacy</h2>
+          <div class="left">
+            <ul>
+                <li>Imagine you have a population of turtles living in two ponds and you want to calculate their mean age.</li>
+                <ul>
+                    <li><b>Pond 1</b> (10, 15, 15, 15, 20)</li>
+                    <ul>
+                      <li>Mean age = 15</li>
+                    </ul>
+                    <li><b>Pond 2</b> (5, 15)</li>
+                    <ul>
+                      <li>Mean age = 10</li>
+                    </ul>
+                    <li><b>Mean age by pond</b></li>
+                    <ul>
+                      <li>(15 + 10)/2 = 12.5 - this is incorrect!</li>
+                    </ul>
+                    <li><b>Mean age by of all turtles</b></li>
+                    <ul>
+                      <li> (10 + 15 + 15 + 15 + 20 + 15 + 10)/7= 13.571</li>
+                    </ul>
+                </ul>
+              </ul>
+            </ul>
+        </div>
+        <div class="right">
+          
+          <img src="images/turtles.jpg" width="100%" style="border: solid 2px black">
+        </div>
+      </section>
+
 
        <section>
         <div class="container">
