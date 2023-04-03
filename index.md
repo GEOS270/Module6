@@ -18,14 +18,16 @@ Here is a week by week breakdown of what's left to cover.
     * Applied Examples
 * Week of Mar 27th
     * Uncertainty in GIS
-    * Ethics in GIS
     * **Proposals Due**
         * Help in office hours 
         * Feedback for those who submit early
 * Week of Apr 3rd
-    * Ethics in GIS Cont.
-    * GIS Programming (**extra credit opportunity**)
+    * Uncertainty in GIS Cont.
+    * Ethics in GIS
+    * GIS Programming: **Friday April 7
+        * Optional (**extra credit opportunity**)
 * Week of Apr 10th
+    * Ethics in GIS Cont.
     * GIS Applications 
     * Exam Review 
     * Projects Due
