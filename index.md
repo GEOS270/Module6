@@ -32,4 +32,8 @@ Here is a week by week breakdown of what's left to cover.
             * Extra credit submissions will be open until Friday April 14th
     * GIS Applications & Exam Review 
     * Projects Due
-        * Available for office hours Wednesday 12th & Friday 14th
+        * Widely available for office hours
+            * Monday 10th 12:30 - 2:00
+            * Wednesday 12th 10:00 - 11:00, 12:30 - 2:00
+            * Friday 14th 11:00 - 2:00
+            * Zoom by apt.
