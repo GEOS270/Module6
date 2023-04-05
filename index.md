@@ -24,10 +24,12 @@ Here is a week by week breakdown of what's left to cover.
 * Week of Apr 3rd
     * Uncertainty in GIS Cont.
     * Ethics in GIS
-    * GIS Programming: **Friday April 7
-        * Optional (**extra credit opportunity**)
+    * In person/zoom office hours Friday the 7th
 * Week of Apr 10th
-    * Ethics in GIS Cont.
-    * GIS Applications 
-    * Exam Review 
+    * GIS Programming: **Extra Credit Opportunity**
+        * **Monday April 10th, 11am**: Zoom lecture/recording
+            * Optional - Attend on zoom or complete asynchronously
+            * Extra credit submissions will be open until Friday April 14th
+    * GIS Applications & Exam Review 
     * Projects Due
+        * Available for office hours Wednesday 12th & Friday 14th
