@@ -60,7 +60,10 @@ Submit a .pdf of the map you created to showing the updated inundation zone.
 Write a paragraph or two comparing the method used in Module 5 (previous method) model to identify the Inundation Zone vs. the method used in this Module 6 (this assignment) to identify the Inundation Zone.  **Things to consider:** What tools/steps were used in each model?  Which do you think produces a more useful result?  What are some potential pros/cons of the  different methods?  
 
 **5)**
-Use the information presented in this [Vox video](https://www.youtube.com/embed/Ok5sKLXqynQ) to write a paragraph or two discussing how racial bias has permeated our tech systems and some of the things that need to be done to counter these issues.
+Use the information presented in this [video](https://www.youtube.com/embed/Ok5sKLXqynQ) to write a paragraph or two discussing how racial bias has permeated our tech systems and some of the things that need to be done to counter these issues.
 
 **6)**
 Read the highlighted portions of [Chae et al. (2015)](content/Chae_et_al_2015.pdf) on racism and health outcomes.  Then use this information to a couple paragraphs outlining what they found, how the type of data they used can be a useful alternative for traditional metrics, and what are some potential limitations to this type of research.
+
+<!-- 
+**7)**This [video](https://www.youtube.com/embed/pu2sKNJMH-k) gives an overview of the historical practice of redlining.  After watching the video, describe in your own words what the practice of redlining was and discuss some of its long lasting impacts? -->
